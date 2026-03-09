@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/honglinbao/chain_of_hints/citation/embed2.py", line 6, in <module>
+    all_df = pd.read_parquet('/net/scratch/honglinbao/coh_data-2016.parquet')
+  File "/home/honglinbao/venv/lib/python3.10/site-packages/pandas/io/parquet.py", line 669, in read_parquet
+    return impl.read(
+  File "/home/honglinbao/venv/lib/python3.10/site-packages/pandas/io/parquet.py", line 258, in read
+    path_or_handle, handles, filesystem = _get_path_or_handle(
+  File "/home/honglinbao/venv/lib/python3.10/site-packages/pandas/io/parquet.py", line 141, in _get_path_or_handle
+    handles = get_handle(
+  File "/home/honglinbao/venv/lib/python3.10/site-packages/pandas/io/common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/net/scratch/honglinbao/coh_data-2016.parquet'
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:02<00:06,  2.26s/it]Batches:  50%|█████     | 2/4 [00:02<00:02,  1.01s/it]Batches: 100%|██████████| 4/4 [00:02<00:00,  2.01it/s]Batches: 100%|██████████| 4/4 [00:02<00:00,  1.44it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  6.60it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  7.31it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  8.13it/s]Batches: 100%|██████████| 4/4 [00:00<00:00,  9.99it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  6.00it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  7.02it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  7.37it/s]Batches: 100%|██████████| 4/4 [00:00<00:00,  9.18it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  9.46it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00, 10.68it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 13.39it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  9.26it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00, 10.50it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 13.16it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  7.74it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  8.11it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  8.66it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 10.84it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  7.58it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  7.77it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  7.85it/s]Batches: 100%|██████████| 4/4 [00:00<00:00,  9.98it/s]
+Traceback (most recent call last):
+  File "/home/honglinbao/chain_of_hints/citation/embed2.py", line 17, in <module>
+    recovered_embeddings = np.load('/net/scratch/honglinbao/embeddings-2016.npy')
+  File "/home/honglinbao/venv/lib/python3.10/site-packages/numpy/lib/npyio.py", line 427, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/net/scratch/honglinbao/embeddings-2016.npy'
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:03<00:09,  3.02s/it]Batches:  50%|█████     | 2/4 [00:03<00:02,  1.32s/it]Batches:  75%|███████▌  | 3/4 [00:03<00:00,  1.31it/s]Batches: 100%|██████████| 4/4 [00:03<00:00,  1.98it/s]Batches: 100%|██████████| 4/4 [00:03<00:00,  1.19it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  7.27it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  7.61it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  7.47it/s]Batches: 100%|██████████| 4/4 [00:00<00:00,  9.57it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  6.87it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  7.53it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  7.73it/s]Batches: 100%|██████████| 4/4 [00:00<00:00,  9.75it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  9.70it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00, 10.88it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 13.64it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  8.68it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00, 10.43it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 12.98it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  8.07it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  8.41it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  8.96it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 11.20it/s]
+Batches:   0%|          | 0/4 [00:00<?, ?it/s]Batches:  25%|██▌       | 1/4 [00:00<00:00,  7.81it/s]Batches:  50%|█████     | 2/4 [00:00<00:00,  8.00it/s]Batches:  75%|███████▌  | 3/4 [00:00<00:00,  8.05it/s]Batches: 100%|██████████| 4/4 [00:00<00:00, 10.24it/s]
